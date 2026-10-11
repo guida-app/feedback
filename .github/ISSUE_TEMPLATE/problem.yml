@@ -1,0 +1,31 @@
+name: Report a problem or confusing step
+description: Help make a Guida workflow or guide easier to use.
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: "This report is public. Use synthetic data and omit credentials, private URLs and confidential records."
+  - type: input
+    id: version
+    attributes:
+      label: Product or example and version
+      placeholder: "Niche jobs example v1, Enterprise 0.1.0-alpha.1, or a documentation URL"
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result and actual result
+      description: Include a small reproduction and safe error text if possible.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and browser or runtime

@@ -1,0 +1,17 @@
+name: Suggest an example or improvement
+description: Tell us the task a new example or feature should help with.
+title: "[Idea] "
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What task would this help you complete?
+      description: Use public or synthetic material.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful result look like?
+    validations:
+      required: true

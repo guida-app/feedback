@@ -1,0 +1,24 @@
+name: Request guided Enterprise evaluation
+description: Describe the workflow you would like to explore.
+title: "[Evaluation] "
+body:
+  - type: markdown
+    attributes:
+      value: "This is a public request. Describe the task using public or synthetic examples. Do not post credentials or private contact details. Access and evaluation terms are arranged separately."
+  - type: textarea
+    id: objective
+    attributes:
+      label: What would you like to build or evaluate?
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Available setup
+      description: For example, a Windows x64 machine and Docker with Linux amd64 containers, or access to an existing installation.
+    validations:
+      required: true
+  - type: textarea
+    id: questions
+    attributes:
+      label: What do you need help with?
